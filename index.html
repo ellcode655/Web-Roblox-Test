@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- Filled Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- Brand Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg-color1 {
+            background-color: black;
+        }
+
+        .text-color1 {
+            color: #f2f2f2;
+        }
+
+        .text-font1 {
+            font-family: "Gill Sans Ultra Bold", "Gill Sans MT", "Gill Sans", sans-serif;
+            font-weight: 900;
+        }
+
+        .hero-video {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:center;
+            display:block;
+            z-index:-1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg bg-color1 text-color1" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="roblox-Photoroom.png" alt="Logo" width="40" height="40">
+            </a>
+            <h3 class="text-bold pt-2 text-font1">ROBLOX</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav pt-2 ms-auto me-5">
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#">About</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#">Security</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#">Technical</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#"><i class="bx bx-search mt-1"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section close -->
+
+    <!-- hero section -->
+    <div class="container-fluid">
+        <video src="Welcome to Roblox_ Discover a World of Imagination.mp4" class="hero-video" autoplay muted loop></video>
+    </div>
+    <!-- hero section close -->
+</body>
+
+</html>

@@ -42,16 +42,26 @@
             font-weight: 900;
         }
 
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .hero-video {
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            object-fit:cover;
-            object-position:center;
-            display:block;
-            z-index:-1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transform: translate(-50%, -50%);
+            z-index: -2;
         }
 
         .bg-black {
@@ -61,7 +71,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(10, 12, 18, 0.5);
-            opacity : 0.6;
+            opacity: 0.6;
             z-index: -1;
         }
 
@@ -75,7 +85,17 @@
         }
 
         .font-size1 {
-            font-size: 70px;
+            font-size: 90px;
+            font-family: "Gill Sans Ultra Bold", "Gill Sans MT", "Gill Sans", sans-serif;
+        }
+
+        .btn {
+            background-color: #f2f2f2;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -119,17 +139,20 @@
     <!-- navbar section close -->
 
     <!-- hero section -->
-    <div class="container-fluid">
-        <div class="container">
-            <video src="asset_vidio.mp4" class="hero-video" autoplay muted loop></video>
-        </div>
+    <section class="hero">
+        <video src="asset_vidio.mp4" class="hero-video" autoplay muted loop playsinline></video>
         <div class="bg-black"></div>
         <div class="video-text">
-            <h1 class="font-size1">Play</h1>
-            <h5>crate</h5>
+            <h1 class="font-size1 font-bold">Play, Create, Grow</h1>
+            <p class="mt-4">Playful experiences that help imagination grow.</p>
+            <button class="btn btn-primary mt-3">Get Started</button>
         </div>
-    </div>
+    </section>
     <!-- hero section close -->
+
+    <div class="container-fluid text-center mt-5">
+        <h1>ABOUT US</h1>
+    </div>
 </body>
 
 </html>

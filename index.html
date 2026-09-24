@@ -100,6 +100,14 @@
                     <img src="test.jpg" alt="img">
                     <h4 class="text-color1 mt-4 mb-3">game name3</h4>
                 </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="test.jpg" alt="img">
+                    <h4 class="text-color1 mt-4 mb-3">game name4</h4>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="test.jpg" alt="img">
+                    <h4 class="text-color1 mt-4 mb-3">game name5</h4>
+                </div>
             </div>
         
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -120,23 +128,68 @@
     <!-- image section end -->
 
     <!-- about section -->
-    <div class="container-fluid bg-color1 pt-5 pb-5 px-5">
+    <div class="container-fluid bg-color1 pt-5 pb-5 px-5" id="about">
         <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-12 col-md-6">
-                    <img src="test.jpg" alt="About Roblox" class="img-fluid rounded"/>
+            <div class="row align-items-center g-5">
+
+                <!-- image side -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-img-wrap position-relative">
+                        <img src="test.jpg" alt="About Roblox" class="img-fluid rounded-4 shadow about-main-img" />
+
+                        <div class="about-badge-card position-absolute d-none d-md-flex">
+                            <i class='bx bxs-calendar-star'></i>
+                            <div>
+                                <h6 class="mb-0 text-color1">Since 2004</h6>
+                                <small class="about-badge-sub">Founded by David & Erik</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <h1 class="text-color1 text-font1 mt-1 mb-3">About Roblox</h1>
-                    <p class="text-color1 font-rubik">
-                        Founded in 2004 by David Baszucki and Erik Cassel, Roblox started as a platform designed to let users create, explore, and share their own virtual worlds. Over the years, it has grown into a global online platform where millions of people can play games, express their creativity, build unique experiences, and connect with friends. Roblox continues to provide a space where imagination and technology come together to create endless possibilities.
+
+                <!-- text side -->
+                <div class="col-12 col-lg-6">
+                    <span class="badge about-eyebrow mb-3">ABOUT ROBLOX</span>
+                    <h1 class="text-color1 text-font1 mb-3">Building Worlds Since 2004</h1>
+                    <p class="text-color1 font-rubik mb-4">
+                        Founded in 2004 by David Baszucki and Erik Cassel, Roblox started as a platform designed to
+                        let users create, explore, and share their own virtual worlds. Over the years, it has grown
+                        into a global online platform where millions of people can play games, express their
+                        creativity, build unique experiences, and connect with friends.
                     </p>
-                    <button class="btn btn-primary mt-3">Learn More</button>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-4">
+                            <div class="about-stat">
+                                <h3 class="text-font1 mb-0">2004</h3>
+                                <small>Founded</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="about-stat">
+                                <h3 class="text-font1 mb-0">70M+</h3>
+                                <small>Daily Users</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="about-stat">
+                                <h3 class="text-font1 mb-0">190+</h3>
+                                <small>Countries</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-secondary mt-4">
+                        Learn More
+                    </button>
                 </div>
+
             </div>
         </div>
     </div>
     <!-- about section close -->
+
+    
 </body>
 
 </html>

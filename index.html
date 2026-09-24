@@ -1,251 +1,206 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roblox Web</title>
     <!-- boostrap css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <!-- boostrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <!-- Basic Icons -->
-    <link
-      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet" />
     <!-- Filled Icons -->
-    <link
-      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet" />
     <!-- Brand Icons -->
-    <link
-      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      .bg-color1 {
-        background-color: black;
-      }
+        .bg-color1 {
+            background-color: black;
+        }
 
-      .text-color1 {
-        color: #f2f2f2;
-      }
+        .text-color1 {
+            color: #f2f2f2;
+        }
 
-      .text-font1 {
-        font-family:
-          "Gill Sans Ultra Bold", "Gill Sans MT", "Gill Sans", sans-serif;
-        font-weight: 900;
-      }
+        .text-font1 {
+            font-family:
+                "Gill Sans Ultra Bold", "Gill Sans MT", "Gill Sans", sans-serif;
+            font-weight: 900;
+        }
 
-      .hero {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-      .hero-video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        transform: translate(-50%, -50%);
-        z-index: -2;
-      }
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+        }
 
-      .bg-black {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(10, 12, 18, 0.5);
-        opacity: 0.6;
-        z-index: -1;
-      }
+        .bg-black {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(10, 12, 18, 0.5);
+            opacity: 0.6;
+            z-index: -1;
+        }
 
-      .video-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-      }
+        .video-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
 
-      .font-size1 {
-        font-size: 90px;
-        font-family:
-          "Gill Sans Ultra Bold", "Gill Sans MT", "Gill Sans", sans-serif;
-      }
+        .font-size1 {
+            font-size: 90px;
+            font-family:
+                "Gill Sans Ultra Bold", "Gill Sans MT", "Gill Sans", sans-serif;
+        }
 
-      .btn {
-        background-color: #f2f2f2;
-        color: black;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-      }
+        .btn {
+            background-color: #f2f2f2;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-      .carousel-inner {
-        border-radius: 10px;
-        width: 50%;
-        margin: 0 auto;
-      }
+        .carousel-inner {
+            border-radius: 10px;
+            width: 50%;
+            margin: 0 auto;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- navbar section -->
-    <nav
-      class="navbar navbar-expand-lg bg-color1 text-color1"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="roblox-Photoroom.png" alt="Logo" width="40" height="40" />
-        </a>
-        <h3 class="text-bold pt-2 text-font1">ROBLOX</h3>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav pt-2 ms-auto me-5">
-            <li class="nav-item me-3">
-              <a class="nav-link text-color1" aria-current="page" href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link text-color1" href="#">About</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link text-color1" href="#">Security</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link text-color1" href="#">Technical</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link text-color1" href="#">Explore</a>
-            </li>
-            <li class="nav-item me-3">
-              <a class="nav-link text-color1" href="#"
-                ><i class="bx bx-search mt-1"></i
-              ></a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg bg-color1 text-color1" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="roblox-Photoroom.png" alt="Logo" width="40" height="40" />
+            </a>
+            <h3 class="text-bold pt-2 text-font1">ROBLOX</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav pt-2 ms-auto me-5">
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#">About</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#">Security</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#">Technical</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-color1" href="#"><i class="bx bx-search mt-1"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- navbar section close -->
 
     <!-- hero section -->
     <section class="hero">
-      <video
-        src="asset_vidio.mp4"
-        class="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-      ></video>
-      <div class="bg-black"></div>
-      <div class="video-text">
-        <h1 class="font-size1 font-bold">Play, Create, Grow</h1>
-        <p class="mt-4">Playful experiences that help imagination grow.</p>
-        <button class="btn btn-primary mt-3">Get Started</button>
-      </div>
+        <video src="asset_vidio.mp4" class="hero-video" autoplay muted loop playsinline></video>
+        <div class="bg-black"></div>
+        <div class="video-text">
+            <h1 class="font-size1 font-bold">Play, Create, Grow</h1>
+            <p class="mt-4">Playful experiences that help imagination grow.</p>
+            <button class="btn btn-primary mt-3">Get Started</button>
+        </div>
     </section>
     <!-- hero section close -->
 
     <!-- about -->
     <div class="container-fluid bg-color1 text-center pt-5 pb-5 px-5">
 
-      <h1 class="title text-color1 text-font1 mb-3 mx-auto" style="max-width: 600px;">
-        DISCOVER THE ROBLOX UNIVERSE
-      </h1>
-      <p class="text-color1 mx-auto" style="max-width: 700px;">
-        Step into a world where anything is possible! Explore, build, and uncover hidden secrets as you create your own adventure. Meet new friends, discover new places, and make every moment unforgettable.
-      </p>
+        <h1 class="title text-color1 text-font1 mb-3 mx-auto" style="max-width: 600px;">
+            DISCOVER THE ROBLOX UNIVERSE
+        </h1>
+        <p class="text-color1 mx-auto" style="max-width: 700px;">
+            Step into a world where anything is possible! Explore, build, and uncover hidden secrets as you create your
+            own adventure. Meet new friends, discover new places, and make every moment unforgettable.
+        </p>
 
-      <div
-        id="carouselExampleInterval"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="test.jpg" class="d-block w-100" alt="img" />
-            <h4 class="text-color1 mt-3 mb-3">game name1</h4>
-          </div>
-          <div class="carousel-item" data-bs-interval="10000">
-            <img src="test.jpg" class="d-block w-100" alt="img" />
-            <h4 class="text-color1 mt-3 mb-3">game name2</h4>
-          </div>
-          <div class="carousel-item" data-bs-interval="10000">
-            <img src="test.jpg" class="d-block w-100" alt="img" />
-            <h4 class="text-color1 mt-3 mb-3">game name3</h4>
-          </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="test.jpg" class="d-block w-100" alt="img" />
+                    <h4 class="text-color1 mt-3 mb-3">game name1</h4>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="test.jpg" class="d-block w-100" alt="img" />
+                    <h4 class="text-color1 mt-3 mb-3">game name2</h4>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="test.jpg" class="d-block w-100" alt="img" />
+                    <h4 class="text-color1 mt-3 mb-3">game name3</h4>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
     </div>
 
     <!-- about end -->
-  </body>
+</body>
+
 </html>

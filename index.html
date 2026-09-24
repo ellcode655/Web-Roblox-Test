@@ -1,313 +1,619 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roblox Web</title>
     <!-- boostrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <!-- boostrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <!-- Basic Icons -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Filled Icons -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
     <!-- Brand Icons -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel=stylesheet href=style.css />
-    <script src=script.js defer></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg bg-color1 text-color1 sticky-lg-top" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="asset/roblox-Photoroom.png" alt="Logo" width="40" height="40" />
-            </a>
-            <h3 class="text-bold pt-2 text-font1">ROBLOX</h3>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav pt-2 ms-auto me-5">
-                    <li class="nav-item me-3">
-                        <a class="nav-link text-color1" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link text-color1" href="#">About</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link text-color1" href="#">Security</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link text-color1" href="#">Technical</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link text-color1" href="#">Explore</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link text-color1" href="#"><i class="bx bx-search mt-1"></i></a>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg bg-color1 text-color1 sticky-lg-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="asset/roblox-Photoroom.png"
+            alt="Logo"
+            width="40"
+            height="40"
+          />
+        </a>
+        <h3 class="text-bold pt-2 text-font1">ROBLOX</h3>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav pt-2 ms-auto me-5">
+            <li class="nav-item me-3">
+              <a class="nav-link text-color1" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-color1" href="#discover">Discover</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-color1" href="#about">About</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-color1" href="#play-friends">Join</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-color1" href="#news">News</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-color1" href="#"
+                ><i class="bx bx-search mt-1"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- navbar section close -->
 
     <!-- hero section -->
     <section class="hero">
-        <video src="asset/asset_vidio.mp4" class="hero-video" autoplay muted loop playsinline></video>
-        <div class="bg-black"></div>
-        <div class="video-text">
-            <h1 class="font-size1 font-bold">Play, Create, Grow</h1>
-            <p class="mt-4">Playful experiences that help imagination grow.</p>
-            <button class="btn btn-primary mt-3">Get Started</button>
-        </div>
+      <video
+        src="asset/asset_vidio.mp4"
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="bg-black"></div>
+      <div class="video-text">
+        <h1 class="font-size1 font-bold">Play, Create, Grow</h1>
+        <p class="mt-4">Playful experiences that help imagination grow.</p>
+        <button class="btn btn-primary mt-3">Get Started</button>
+      </div>
     </section>
     <!-- hero section close -->
 
     <!-- Image section -->
-    <div class="container-fluid bg-color1 text-center pt-5 pb-5 px-5">
+    <div
+      class="container-fluid bg-color1 text-center pt-5 pb-5 px-5"
+      id="discover"
+    >
+      <h1
+        class="title text-color1 text-font1 mb-3 mx-auto"
+        style="max-width: 600px"
+      >
+        DISCOVER THE ROBLOX UNIVERSE
+      </h1>
+      <p class="text-color1 mx-auto" style="max-width: 700px">
+        Step into a world where anything is possible! Explore, build, and
+        uncover hidden secrets as you create your own adventure. Meet new
+        friends, discover new places, and make every moment unforgettable.
+      </p>
 
-        <h1 class="title text-color1 text-font1 mb-3 mx-auto" style="max-width: 600px;">
-            DISCOVER THE ROBLOX UNIVERSE
-        </h1>
-        <p class="text-color1 mx-auto" style="max-width: 700px;">
-            Step into a world where anything is possible! Explore, build, and uncover hidden secrets as you create your
-            own adventure. Meet new friends, discover new places, and make every moment unforgettable.
-        </p>
-
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="asset/BTD.jpg" alt="img">
-                    <h4 class="text-color1 mt-4 mb-3">Brainrot Tower Defense</h4>
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="asset/DArngrblx.jpg" alt="img">
-                    <h4 class="text-color1 mt-4 mb-3">Defeat Anime RNG</h4>
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="asset/STIBAJRArblx.jpg" alt="img">
-                    <h4 class="text-color1 mt-4 mb-3">STIBAJRA</h4>
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="asset/workatpizzaplace.jpg" alt="img">
-                    <h4 class="text-color1 mt-4 mb-3">Work at a Pizza Place</h4>
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="asset/bloxfruit.jpg" alt="img">
-                    <h4 class="text-color1 mt-4 mb-3">Blox Fruit</h4>
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="asset/BTD.jpg" alt="img" />
+            <h4 class="text-color1 mt-4 mb-3">Brainrot Tower Defense</h4>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="asset/DArngrblx.jpg" alt="img" />
+            <h4 class="text-color1 mt-4 mb-3">Defeat Anime RNG</h4>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="asset/STIBAJRArblx.jpg" alt="img" />
+            <h4 class="text-color1 mt-4 mb-3">STIBAJRA</h4>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="asset/workatpizzaplace.jpg" alt="img" />
+            <h4 class="text-color1 mt-4 mb-3">Work at a Pizza Place</h4>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="asset/bloxfruit.jpg" alt="img" />
+            <h4 class="text-color1 mt-4 mb-3">Blox Fruit</h4>
+          </div>
         </div>
 
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
 
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <!-- image section end -->
 
     <!-- about section -->
     <div class="container-fluid bg-color1 pt-5 pb-5 px-5" id="about">
-        <div class="container">
-            <div class="row align-items-center g-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- image side -->
+          <div class="col-12 col-lg-6">
+            <div class="about-img-wrap position-relative">
+              <img
+                src="asset/rblx.jpg"
+                alt="About Roblox"
+                class="img-fluid rounded-4 shadow about-main-img"
+              />
 
-                <!-- image side -->
-                <div class="col-12 col-lg-6">
-                    <div class="about-img-wrap position-relative">
-                        <img src="asset/rblx.jpg" alt="About Roblox"
-                            class="img-fluid rounded-4 shadow about-main-img" />
-
-                        <div class="about-badge-card position-absolute d-none d-md-flex">
-                            <i class='bx bxs-calendar-star'></i>
-                            <div>
-                                <h6 class="mb-0 text-color1">Since 2004</h6>
-                                <small class="about-badge-sub">Founded by David & Erik</small>
-                            </div>
-                        </div>
-                    </div>
+              <div class="about-badge-card position-absolute d-none d-md-flex">
+                <i class="bx bxs-calendar-star"></i>
+                <div>
+                  <h6 class="mb-0 text-color1">Since 2004</h6>
+                  <small class="about-badge-sub">Founded by David & Erik</small>
                 </div>
-
-                <!-- text side -->
-                <div class="col-12 col-lg-6">
-                    <span class="badge about-eyebrow mb-3">ABOUT ROBLOX</span>
-                    <h1 class="text-color1 text-font1 mb-3">Building Worlds Since 2004</h1>
-                    <p class="text-color1 font-rubik mb-4">
-                        Founded in 2004 by David Baszucki and Erik Cassel, Roblox started as a platform designed to
-                        let users create, explore, and share their own virtual worlds. Over the years, it has grown
-                        into a global online platform where millions of people can play games, express their
-                        creativity, build unique experiences, and connect with friends.
-                    </p>
-
-                    <div class="row g-3 mb-4">
-                        <div class="col-4">
-                            <div class="about-stat">
-                                <h3 class="text-font1 mb-0">2004</h3>
-                                <small>Founded</small>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="about-stat">
-                                <h3 class="text-font1 mb-0">70M+</h3>
-                                <small>Daily Users</small>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="about-stat">
-                                <h3 class="text-font1 mb-0">190+</h3>
-                                <small>Countries</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button type="button" class="btn btn-secondary mt-4">
-                        Learn More
-                    </button>
-                </div>
-
+              </div>
             </div>
+          </div>
+
+          <!-- text side -->
+          <div class="col-12 col-lg-6">
+            <span class="badge about-eyebrow mb-3">ABOUT ROBLOX</span>
+            <h1 class="text-color1 text-font1 mb-3">
+              Building Worlds Since 2004
+            </h1>
+            <p class="text-color1 font-rubik mb-4">
+              Founded in 2004 by David Baszucki and Erik Cassel, Roblox started
+              as a platform designed to let users create, explore, and share
+              their own virtual worlds. Over the years, it has grown into a
+              global online platform where millions of people can play games,
+              express their creativity, build unique experiences, and connect
+              with friends.
+            </p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-4">
+                <div class="about-stat">
+                  <h3 class="text-font1 mb-0">2004</h3>
+                  <small>Founded</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="about-stat">
+                  <h3 class="text-font1 mb-0">70M+</h3>
+                  <small>Daily Users</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="about-stat">
+                  <h3 class="text-font1 mb-0">190+</h3>
+                  <small>Countries</small>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-secondary mt-4">
+              Learn More
+            </button>
+          </div>
         </div>
+      </div>
     </div>
     <!-- about section close -->
 
     <!-- play with friends section -->
     <div class="container-fluid text-center pt-5 pb-5 px-5" id="play-friends">
-        <h1 class="text-font1 mb-3">PLAY WITH FRIENDS</h1>
-        <p class="mx-auto mb-5" style="max-width: 700px;">
-            Create and Play with friends in this cross-platform game. Join lively communities or create your own
-            private world with Roblox!
-        </p>
+      <h1 class="text-font1 mb-3">PLAY WITH FRIENDS</h1>
+      <p class="mx-auto mb-5" style="max-width: 700px">
+        Create and Play with friends in this cross-platform game. Join lively
+        communities or create your own private world with Roblox!
+      </p>
 
-        <div class="row justify-content-center g-4">
-
-            <!-- card 1: Online -->
-            <div class="col-12 col-md-6 col-lg-5">
-                <div class="card feature-card border-0 shadow-lg h-100 text-start">
-                    <div class="position-relative">
-                        <img src="test.jpg" class="card-img-top feature-card-img" alt="Online" />
-                        <span class="badge feature-badge position-absolute top-0 end-0 m-3">
-                            <i class='bx bx-spanner'></i> Create
-                        </span>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title text-font1 mb-2">Roblox Studio</h3>
-                        <p class="card-text font-rubik">
-                            Build and publish your own games with a free, powerful creation tool used by millions of developers worldwide.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge feature-tag">UNLIMITED PLAYERS</span>
-                            <span class="badge feature-tag">ALL PLATFORMS</span>
-                        </div>
-
-                        <div class="accordion accordion-flush feature-accordion" id="accordionOnline">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#worldsOnline">
-                                        WORLDS
-                                    </button>
-                                </h2>
-                                <div id="worldsOnline" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionOnline">
-                                    <div class="accordion-body font-rubik">
-                                        Design and build your own worlds from scratch using Roblox Studio's powerful creation tools.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#serversOnline">
-                                        SERVERS
-                                    </button>
-                                </h2>
-                                <div id="serversOnline" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionOnline">
-                                    <div class="accordion-body font-rubik">
-                                        Set up and manage your own servers to host the games you've created for other players.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="row justify-content-center g-4">
+        <!-- card 1: Online -->
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="card feature-card border-0 shadow-lg h-100 text-start">
+            <div class="position-relative">
+              <img
+                src="asset/studio.png"
+                class="card-img-top feature-card-img"
+                alt="Online"
+              />
+              <span
+                class="badge feature-badge position-absolute top-0 end-0 m-3"
+              >
+                <i class="bx bx-spanner"></i> Create
+              </span>
             </div>
+            <div class="card-body">
+              <h3 class="card-title text-font1 mb-2">Roblox Studio</h3>
+              <p class="card-text font-rubik">
+                Build and publish your own games with a free, powerful creation
+                tool used by millions of developers worldwide.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge feature-tag">CREATE YOUR OWN MAP</span>
+                <span class="badge feature-tag">COLLAB WITH FRIENDS</span>
+              </div>
 
-            <!-- card 2: Private Server -->
-            <div class="col-12 col-md-6 col-lg-5">
-                <div class="card feature-card feature-card-private border-0 shadow-lg h-100 text-start">
-                    <div class="position-relative">
-                        <img src="test.jpg" class="card-img-top feature-card-img" alt="Private Server" />
-                        <span class="badge feature-badge feature-badge-private position-absolute top-0 end-0 m-3"> PRIVATE </span>
+              <div
+                class="accordion accordion-flush feature-accordion"
+                id="accordionOnline"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#worldsOnline"
+                    >
+                      WORLDS
+                    </button>
+                  </h2>
+                  <div
+                    id="worldsOnline"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionOnline"
+                  >
+                    <div class="accordion-body font-rubik">
+                      Design and build your own worlds from scratch using Roblox
+                      Studio's powerful creation tools.
                     </div>
-                    <div class="card-body">
-                        <h3 class="card-title text-font1 mb-2">Roblox Player</h3>
-                        <p class="card-text font-rubik">
-                            Jump into thousands of experiences created by the community, play with friends, and explore new worlds every day.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge feature-tag">UP TO 11 PLAYERS</span>
-                            <span class="badge feature-tag">PREMIUM</span>
-                        </div>
-
-                        <div class="accordion accordion-flush feature-accordion" id="accordionPrivate">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#plusPrivate">
-                                        ROBLOX PLUS
-                                    </button>
-                                </h2>
-                                <div id="plusPrivate" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionPrivate">
-                                    <div class="accordion-body font-rubik">
-                                        Unlock exclusive perks, extra customization, and premium access across the games you love to play.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#createPrivate">
-                                        PLAY WITH FRIENDS
-                                    </button>
-                                </h2>
-                                <div id="createPrivate" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionPrivate">
-                                    <div class="accordion-body font-rubik">
-                                        Jump into thousands of games and experiences made by the community, ready to play anytime.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#serversOnline"
+                    >
+                      SERVERS
+                    </button>
+                  </h2>
+                  <div
+                    id="serversOnline"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionOnline"
+                  >
+                    <div class="accordion-body font-rubik">
+                      Set up and manage your own servers to host the games
+                      you've created for other players.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</body>
 
+        <!-- card 2: Private Server -->
+        <div class="col-12 col-md-6 col-lg-5">
+          <div
+            class="card feature-card feature-card-private border-0 shadow-lg h-100 text-start"
+          >
+            <div class="position-relative">
+              <img
+                src="asset/player.png"
+                class="card-img-top feature-card-img"
+                alt="Private Server"
+              />
+              <span
+                class="badge feature-badge feature-badge-private position-absolute top-0 end-0 m-3"
+              >
+                PUBLIC
+              </span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-font1 mb-2">Roblox Player</h3>
+              <p class="card-text font-rubik">
+                Jump into thousands of experiences created by the community,
+                play with friends, and explore new worlds every day.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="badge feature-tag">EXPLORE</span>
+                <span class="badge feature-tag">MEET FRIENDS</span>
+              </div>
+
+              <div
+                class="accordion accordion-flush feature-accordion"
+                id="accordionPrivate"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#plusPrivate"
+                    >
+                      ROBLOX PLUS
+                    </button>
+                  </h2>
+                  <div
+                    id="plusPrivate"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionPrivate"
+                  >
+                    <div class="accordion-body font-rubik">
+                      Unlock exclusive perks, extra customization, and premium
+                      access across the games you love to play.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#createPrivate"
+                    >
+                      PLAY WITH FRIENDS
+                    </button>
+                  </h2>
+                  <div
+                    id="createPrivate"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionPrivate"
+                  >
+                    <div class="accordion-body font-rubik">
+                      Jump into thousands of games and experiences made by the
+                      community, ready to play anytime.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- news -->
+    <div class="container-fluid pt-5 pb-5 bg-color1 text-color1" id="news">
+      <div class="container">
+        <h1 class="fw-bold">Featured News</h1>
+
+        <div class="row">
+          <!-- card 1 -->
+          <div class="col-12 col-md-4">
+            <a href="https://www.roblox.com/home" class="text-decoration-none text-dark">
+              <div class="card border-dark mt-4">
+                <img
+                  src="asset/thehunt.png"
+                  class="card-img-top"
+                  alt="the hunt"
+                />
+
+                <div
+                  class="card-body news-body news-header d-flex justify-content-between align-items-center"
+                >
+                  <h6 class="fw-bold mb-0 text-color2">KOMUNITAS</h6>
+                  <h6 class="fw-bold mb-0 text-color2">16 Sep 2026</h6>
+                </div>
+
+                <div class="row-12 card-body news-body description">
+                  <span class="text-color3"
+                    >Bergabunglah dalam "The Hunt : ROBLOX 20"</span
+                  >
+                  <div>
+                    <span class="card-link fw-bold text-color3"
+                      >Baca Selengkapnya <span class="read-more">➔</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- card 2 -->
+          <div class="col-12 col-md-4">
+            <a href="https://www.roblox.com/home" class="text-decoration-none text-dark">
+              <div class="card border-dark mt-4">
+                <img
+                  src="asset/rblxnews.jpg"
+                  class="card-img-top"
+                  alt="the hunt"
+                />
+
+                <div
+                  class="card-body news-body news-header d-flex justify-content-between align-items-center"
+                >
+                  <h6 class="fw-bold mb-0 text-color2">KEAMANAN + KESOPANAN</h6>
+                  <h6 class="fw-bold mb-0 text-color2">15 Sep 2026</h6>
+                </div>
+
+                <div class="row-12 card-body news-body description">
+                  <span class="text-color3"
+                    >Panduan Orang Tua untuk Diskusi Waktu Layar Saat Kembali ke
+                    Sekolah</span
+                  >
+                  <div>
+                    <span class="card-link fw-bold text-color3"
+                      >Baca Selengkapnya <span class="read-more">➔</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- card 3 -->
+          <div class="col-12 col-md-4">
+            <a href="https://www.roblox.com/home" class="text-decoration-none text-dark">
+              <div class="card border-dark mt-4">
+                <img
+                  src="asset/ria2026.jpg"
+                  class="card-img-top"
+                  alt="the hunt"
+                />
+
+                <div
+                  class="card-body news-body news-header d-flex justify-content-between align-items-center"
+                >
+                  <h6 class="fw-bold mb-0 text-color2">KOMUNITAS</h6>
+                  <h6 class="fw-bold mb-0 text-color2">12 Sep 2026</h6>
+                </div>
+
+                <div class="row-12 card-body news-body description">
+                  <span class="text-color3"
+                    >Pameran Penghargaan Inovasi Roblox 2026: Menunjukkan Apa
+                    yang Mungkin Dilakukan di Roblox</span
+                  >
+                  <div>
+                    <span class="card-link fw-bold text-color3"
+                      >Baca Selengkapnya <span class="read-more">➔</span></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- news end -->
+
+    <!-- footer -->
+    <footer class="bg-color1 text-color1 pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- Brand -->
+          <div class="col-md-5 mb-4">
+            <h3 class="text-font1 mb-3">ROBLOX</h3>
+            <p class="text-color2">
+              Play, create, and explore endless experiences with friends around
+              the world.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="col-6 col-md-3 mb-4">
+            <h6 class="fw-bold mb-3">EXPLORE</h6>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-color2 text-decoration-none"> Home </a>
+              </li>
+
+              <li class="mb-2">
+                <a href="#discover" class="text-color2 text-decoration-none">
+                  Discover
+                </a>
+              </li>
+
+              <li class="mb-2">
+                <a href="#about" class="text-color2 text-decoration-none">
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a href="#News" class="text-color2 text-decoration-none">
+                  News
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div class="col-6 col-md-4 mb-4">
+            <h6 class="fw-bold mb-3">FOLLOW US</h6>
+
+            <div class="d-flex gap-3">
+              <a href="#" class="text-color1 fs-4">
+                <i class="bxl bx-discord"></i>
+              </a>
+
+              <a href="#" class="text-color1 fs-4">
+                <i class="bxl bx-youtube"></i>
+              </a>
+
+              <a href="#" class="text-color1 fs-4">
+                <i class="bxl bx-instagram"></i>
+              </a>
+
+              <a href="#" class="text-color1 fs-4">
+                <i class="bxl bx-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-secondary" />
+
+        <!-- Copyright -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <p class="text-color2 mb-2 mb-md-0">
+            © 2026 Roblox Web. All rights reserved.
+          </p>
+
+          <div>
+            <a href="#" class="text-color2 text-decoration-none me-3">
+              Privacy
+            </a>
+
+            <a href="#" class="text-color2 text-decoration-none"> Terms </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
 </html>
